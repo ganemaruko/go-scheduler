@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: leader server
+  version: 0.1.0
+servers:
+- url: /
+paths:
+  /:
+    get:
+      operationId: getRoot
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                example: leader
+                type: string
+          description: OK
+      summary: Get Root
+components:
+  schemas: {}
