@@ -17,6 +17,9 @@ func main() {
 	e.Use(middleware.Recover())
 
 
+	// GetFollowers - get followers.
+	e.GET("/core/follower", c.GetFollowers)
+
 	// GetRoot - Get Root
 	e.GET("/", c.GetRoot)
 

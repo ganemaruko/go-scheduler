@@ -1,7 +1,6 @@
-package main
+package core
 
-struct Follower{
+type Follower struct {
 	Name string
-	ID string
+	ID   string
 }
-

@@ -1,5 +1,10 @@
-package core
+package leader
 
-func GetFollowers() []Follower {
-	return []string{"follower1", "follower2", "follower3"}
+import (
+	"github.com/ganemaruko/go-scheduler/core"
+)
+
+func GetFollowers() []core.Follower {
+	follower := []core.Follower{{Name: "Follower 1", ID: "1"}, {Name: "Follower 2", ID: "2"}}
+	return follower
 }

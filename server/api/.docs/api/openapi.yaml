@@ -17,5 +17,19 @@ paths:
                 type: string
           description: OK
       summary: Get Root
+  /core/follower:
+    get:
+      operationId: getFollowers
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                example: leader
+                type: string
+          description: OK
+      summary: get followers.
+      tags:
+      - core
 components:
   schemas: {}

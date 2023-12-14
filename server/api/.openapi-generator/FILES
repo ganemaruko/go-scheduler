@@ -2,6 +2,7 @@
 Dockerfile
 README.md
 go.mod
+handlers/api_core.go
 handlers/api_default.go
 handlers/container.go
 main.go
