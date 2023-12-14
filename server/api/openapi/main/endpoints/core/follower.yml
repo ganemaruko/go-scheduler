@@ -4,10 +4,12 @@ info:
   version: 0.1.0
 
 paths:
-  /:
+  /core/follower:
     get:
-      summary: Get Root
+      summary: get followers.
       operationId: getRoot
+      tags:
+        - core
       responses:
         "200":
           description: OK
