@@ -6,6 +6,10 @@ import {
   MachinePage,
 } from "src/components/pages/machine/machine_page";
 import { NotFoundPage } from "src/components/pages/not_found/not_found_page";
+import {
+  SETTING_PAGE_PATH,
+  SettingPage,
+} from "src/components/pages/setting/setting_page";
 
 /**
  * This page has strong relationship with header.tsx.
@@ -17,6 +21,7 @@ export const AppRoute: React.FC = () => {
       <Route path="/" element={<HomePage />} />
       <Route path={JOB_PAGE_PATH} element={<JobPage />} />
       <Route path={MACHINE_PAGE_PATH} element={<MachinePage />} />
+      <Route path={SETTING_PAGE_PATH} element={<SettingPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

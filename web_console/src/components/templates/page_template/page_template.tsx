@@ -14,20 +14,10 @@ export type TabTemplateProps = {
  * This template appends order list to right side or bottom side.
  */
 export const PageTemplate = (props: TabTemplateProps) => {
-  const orders = useRootSelector((state) => state.order.orders);
-
-  const orderList = Object.entries(orders).map(([orderId, quantity]) => {
-    return {
-      quantity: quantity,
-      name: PRODUCT_DISPLAY_NAME[orderId],
-      price: PRODUCT_PRICE[orderId],
-    };
-  });
-
   return (
     <>
       <Header />
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid xl={10} lg={10} sm={12} md={12} xs={12}>
           {props.children}
         </Grid>

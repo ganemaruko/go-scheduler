@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { JOB_PAGE_PATH } from "src/components/pages/job/job_page";
 import { MACHINE_PAGE_PATH } from "src/components/pages/machine/machine_page";
 import { DrinkTab } from "src/components/pages/order/tabs/drink_tab";
+import { SETTING_PAGE_PATH } from "src/components/pages/setting/setting_page";
 
 type TabPanelProps = {
   children?: ReactNode;
@@ -74,7 +75,13 @@ export const Header = () => {
               navigate(MACHINE_PAGE_PATH);
             }}
           />
-          <Tab label="Settings" {...a11yProps(2)} />
+          <Tab
+            label="Settings"
+            {...a11yProps(2)}
+            onClick={() => {
+              navigate(SETTING_PAGE_PATH);
+            }}
+          />
           <Tab label="Docs" {...a11yProps(3)} />
           <Tab label="Others" {...a11yProps(4)} />
         </Tabs>
