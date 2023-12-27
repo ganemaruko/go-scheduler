@@ -4,4 +4,6 @@ use (
 	./api
 	./core
 	./leader
+	./follower
+	./database
 )
